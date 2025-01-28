@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="style.css"> <!-- Link to the external CSS file -->
+</head>
+<body>
+  <h1>My Portfolio</h1>
+  <button onclick="showAbout()">About Me</button>
+  <button onclick="openProject('pong')">Pong Project</button>
+  <button onclick="openProject('biodiversity')">Biodiversity Project</button>
+  <button onclick="openProject('crossy-frog')">Crossy Frog</button>
+
+  <script>
+    function showAbout() {
+      alert("This is a portfolio about my projects. Stay tuned for updates!");
+    }
+
+    function openProject(projectName) {
+      alert(`Opening ${projectName} project...`);
+      // You can replace the alert with logic to redirect to specific pages:
+      // window.location.href = `/${projectName}.html`;
+    }
+  </script>
+</body>
+</html>
